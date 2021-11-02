@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: #ddd;
+  margin: 0;
+}
+.header{
+  position: relative;
+  height: 80px;
+  padding: 20px 10px;
+  background-color: #fff;
+}
+.centervert-absorel{
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.centeroriz-centervert-absorel{
+  left: 50%;
+}
+.floatright-centervert-absorel{
+  right: 50px;
+}
+.header a{
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+.header a:hover{
+  background-color: #ddd;
+}
+.header-right{
+}
+.prova{
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+.frase{
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+}
