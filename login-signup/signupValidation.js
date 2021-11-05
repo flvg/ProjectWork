@@ -51,11 +51,13 @@ function checkPassword() {
       password2_error.innerHTML = "Le password corrispondono";
       password2_error.style.visibility = "visible";
       document.getElementById('password2_error').style.color = "green";
+      document.getElementById("submit").disabled = false;
     }
     else {
       password2_error.innerHTML = "Le password non corrispondono";
       password2_error.style.visibility = "visible";
       document.getElementById('password2_error').style.color = "red";
+      document.getElementById("submit").disabled = true;
     }
   }
 }
