@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title> Registrati </title>
+  </head>
+  <body>
+    <div class="container">
+    <div class="header"><h2> Sign Up </h2></div>
+            <form method="post" id="form" class="form" onsubmit="return validated()">
+              <div class="name_surname">
+              <div class="form-control">
+                <label for="name"> Nome </label>
+                <input type="text" id="name" name="name" required> <br>
+                <small id="name_error">Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="surname"> Cognome </label>
+                <input type="text" id="surname" name="surname" required> <br>
+                <small id="surname_error">Error message</small>
+              </div>
+            </div>
+              <div class="form-control">
+                <label for="email"> E-mail </label>
+                <input type="email" id="email" name="email" required> <br>
+                <small id="email_error">Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="password"> Password </label>
+                <input type="password" id="password" name="password" required ><br>
+                <small id="password_error">Error message</small>
+              </div>
+              <div class="form-control">
+                <label for="password2"> Conferma password </label>
+                <input type="password" id="password2" name="password2" onblur="checkPassword()" required><br>
+                <small id="password2_error">Error message</small>
+              </div>
+              <div class="form-control">
+                <button type="submit" name="submit"> Invia </button>
+                <div class="signup_link">
+                  Hai già un account? <a href="login.html"> Accedi </a>
+                </div>
+              </div>
+            </form>
+    </div>
+    <script src="signupValidation.js"></script>
+  </body>
+</html>

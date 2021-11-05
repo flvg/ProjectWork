@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title> Accedi </title>
+
+  </head>
+  <body>
+<div class="container">
+<div class="header"><h2> Login </h2></div>
+        <form method="post" id="form" class="form" onsubmit="return validated()">
+          <div class="form-control">
+            <label for="email"> E-mail </label>
+            <input type="email" id="email" name="email" > <br>
+            <small id="email_error">Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="password"> Password </label>
+            <input type="password" id="password" name="password" ><br>
+            <small id="password_error">Error message</small>
+          </div>
+          <div class="form-control">
+            <button type="submit" name="submit"> Invia </button>
+            <div class="signup_link">
+              Non sei registrato? <a href="signup.html"> Registrati </a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <script src="loginValidation.js"></script>
+  </body>
+</html>
