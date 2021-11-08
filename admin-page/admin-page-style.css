@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+.container {
+  position: relative;
+  width: 100%;
+}
+.navigation {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background: #003147;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.navigation.active {
+    width: 60px;
+}
+.navigation ul {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+}
+.navigation ul li:hover {
+  background: #03a9f4;
+}
+.navigation ul li:nth-child(1) {
+  margin-bottom: 20px;
+}
+.navigation ul li:nth-child(1):hover {
+  background: transparent;
+}
+.navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+}
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.navigation ul li a .icon .bi {
+  color: #fff;
+  font-size: 24px;
+}
+.navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  white-space: nowrap;
+}
+.main {
+  position: absolute;
+  width: calc(100% - 300px);
+  left: 300px;
+  min-height: 100vh;
+  background: #f5f5f5;
+  transition: 0.5s;
+}
+.main.active {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+.main .topbar {
+  width: 100%;
+  background: #fff;
+  height: 60px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .topbar .toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.toggle::before {
+  content: '\2630';
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  font-size: 24px;
+  text-align: center;
+  color: black;
+}
+.home {
+  position: relative;
+  width: 400px;
+  margin: 0 10px;
+  text-align: center;
+}
+.home .bi{
+  cursor: pointer;
+}
+.home label {
+  position: relative;
+  width: 100%;
+}
+
+.user {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cardBox {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px;
+}
+.cardBox .card {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.cardBox .card .numbers {
+  position: relative;
+  font-size: 2em;
+  font-weight: 500;
+}
+.cardBox .card .cardName {
+  color: #999;
+}
+.details {
+  position: relative;
+  padding-top: 0;
+  width: 100%;
+  padding: 20px;
+}
+.details .recentCandidate {
+  position: relative;
+  display: grid;
+  min-height: 530px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cardHeader h2 {
+  font-weight: bold;
+}
+.details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+.details table thead td {
+  font-weight: 600;
+}
+.details .recentCandidate table tr {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.details .recentCandidate table tbody tr:hover {
+  background: #f5f5f5;
+}
+.details .recentCandidate table tr:last-child {
+  border-bottom: none;
+}
+.details .recentCandidate table tr td {
+  padding: 9px 5px;
+}
+
+@media (max-width: 992px){
+  .navigation{
+    left: -300px;
+  }
+  .navigation.active{
+    left: 0;
+    width: 300px;
+  }
+  .main {
+    width: 100%;
+    left: 0;
+  }
+  .main.active {
+    width: calc(100% - 300px);
+    left: 300px;
+  }
+}
+
+@media (max-width: 768px){
+  .cardHeader h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px){
+  .cardBox {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .details .recentCandidate {
+    overflow-x: auto;
+  }
+  .details .recentCandidate table {
+    width: 500px;
+  }
+  .navigation {
+    width: 100%;
+    left: -100%;
+    z-index: 1000;
+  }
+  .navigation.active {
+    width: 100%;
+    left: 0;
+  }
+  .toggle.active {
+    z-index: 10000;
+    right: 0;
+    left: initial;
+    position: fixed;
+  }
+  .toggle.active::before {
+    color: #fff;
+  }
+}
