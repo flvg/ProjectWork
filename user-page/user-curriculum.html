@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="user-page-style.css">
+    <title>user</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+            <span class="icon"></span>
+            <span class="title"><h2>Logo</h2></span>
+            </a>
+          </li>
+          <li>
+            <a href="user-page.html">
+            <span class="icon">
+              <!-- Portfolio icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-speedometer2" viewBox="0 0 16 16">
+                  <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+                  <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+                </svg>
+            </span>
+
+            <span class="title">Dati personali</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+            <span class="icon">
+              <!-- Curriculum' icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                  <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                </svg>
+            </span>
+            <span class="title">Curriculum</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle" onclick="toggleMenu();"></div>
+          <div class="home">
+            <label><a href="#home">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                    </svg>
+              </a>
+            </label>
+          </div>
+            <div class="user">
+              <img src="admin.png" alt=""> //username
+            </div>
+        </div>
+
+        <div class="details">
+          <input type="file" name="file_curriculum">
+          <fieldset class="studi">
+            <legend>Studi</legend>
+            <div class="form-control">
+              <label for="istruzione"> Livello di istruzione </label>
+              <input type="text" id="istruzione" name="istruzione"> <br>
+              <small id="istruzione_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="valutazione"> Valutazione conseguita </label>
+              <input type="text" id="valutazione" name="valutazione"> <br>
+              <small id="valutazione_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="city"> Città del conseguimento </label>
+              <input type="text" id="city" name="city"> <br>
+              <small id="city_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="istituto"> Istituto</label>
+              <input type="text" id="istituto" name="istituto"> <br>
+              <small id="istituto_error">Error message</small>
+            </div>
+          </fieldset>
+
+          <fieldset class="esperienze">
+            <legend>Esperienze professionali</legend>
+            <div class="form-control">
+              <label for="pos_lavorativa"> Posizione lavorativa </label>
+              <input type="text" id="pos_lavorativa" name="pos_lavorativa"> <br>
+              <small id="pos_lavorativa_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="azienda"> Azienda </label>
+              <input type="text" id="azienda" name="azienda"> <br>
+              <small id="azienda_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="city"> Città del conseguimento </label>
+              <input type="text" id="city" name="city"> <br>
+              <small id="city_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="istituto"> Istituto</label>
+              <input type="text" id="istituto" name="istituto"> <br>
+              <small id="istituto_error">Error message</small>
+            </div>
+          </fieldset>
+        </div>
+
+
+    <script>
+      function toggleMenu() {
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+        toggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+        main.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
