@@ -30,6 +30,15 @@ legend {
   padding-bottom: 15px;
   position: relative;
 }
+.form-control select {
+  border: 2px solid #f0f0f0;
+  border-radius: 5px;
+  display: block;
+  font-size: 14px;
+  padding: 10px;
+  font-family: inherit;
+  width: 100%;
+}
 .form-control input {
   border: 2px solid #f0f0f0;
   border-radius: 5px;
@@ -47,6 +56,11 @@ form button {
   border-radius: 5px;
 }
 #modifica {
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  border-radius: 5px;
   background-color: white;
   border: 2px solid #2cbe29;
 }

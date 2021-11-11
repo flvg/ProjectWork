@@ -13,7 +13,7 @@
           <li>
             <a href="#">
             <span class="icon"></span>
-            <span class="title"><h2>Logo</h2></span>
+            <span class="title"><img src="../HTML/IMG/zc2.png" style="height:50px; width:50px; margin-top:20px;"alt=""></span>
             </a>
           </li>
           <li>
@@ -30,7 +30,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="user-curriculum.html">
             <span class="icon">
               <!-- Curriculum' icon -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
@@ -42,25 +42,35 @@
             <span class="title">Curriculum</span>
             </a>
           </li>
+          <li>
+            <a href="user-test.html">
+              <span class="icon">
+                <!-- Curriculum' icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+                  <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+                  <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+                </svg>
+              </span>
+              <span class="title">Test</span>
+            </a>
+          </li>
         </ul>
       </div>
       <div class="main">
         <div class="topbar">
           <div class="toggle" onclick="toggleMenu();"></div>
           <div class="home">
-            <label><a href="#home">
+            <!-- <label><a href="#home">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
                     <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
                     </svg>
               </a>
-            </label>
+            </label> -->
           </div>
-            <div class="user">
-              <img src="admin.png" alt=""> //username
-            </div>
         </div>
 
         <div class="details">
+          <form class="" action="index.html" method="post">
           <input type="file" name="file_curriculum">
           <fieldset class="studi">
             <legend>Studi</legend>
@@ -109,8 +119,149 @@
               <small id="istituto_error">Error message</small>
             </div>
           </fieldset>
-        </div>
 
+          <fieldset class="lingue">
+            <legend>Lingue</legend>
+            <div class="form-control">
+              <label for="language_la"> Lingua </label>
+              <input type="text" id="language_la" name="language_la"> <br>
+              <small id="language_la_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="language_livscritt"> Livello lingua scritta </label>
+              <select id="language_livscritt" name="language_livscritt">
+                <option value="written_a1">A1</option>
+                <option value="written_a2">A2</option>
+                <option value="written_b1">B1</option>
+                <option value="written_b2">B2</option>
+                <option value="written_c1">C1</option>
+                <option value="written_c2">C2</option>
+              </select> <br>
+              <small id="language_livscritt_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="language_livparlato"> Livello lingua parlata </label>
+              <select id="language_livparlato" name="language_livparlato">
+                <option value="speak_a1">A1</option>
+                <option value="speak_a2">A2</option>
+                <option value="speak_b1">B1</option>
+                <option value="speak_b2">B2</option>
+                <option value="speak_c1">C1</option>
+                <option value="speak_c2">C2</option>
+              </select> <br>
+              <small id="language_livparlato_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="language_cert"> Certificazione/i di lingua</label>
+              <select id="language_cert" name="language_cert">
+                <option value="cert_a1">A1</option>
+                <option value="cert_a2">A2</option>
+                <option value="cert_b1">B1</option>
+                <option value="cert_b2">B2</option>
+                <option value="cert_c1">C1</option>
+                <option value="cert_c2">C2</option>
+              </select> <br>
+              <small id="language_cert_error">Error message</small>
+            </div>
+          </fieldset>
+
+          <fieldset class="conoscenze">
+            <legend>Conoscenze</legend>
+            <div class="form-control">
+              <label for="know_word"> Word </label>
+              <select id="know_word" name="know_word">
+                <option value="w1">Nulla</option>
+                <option value="w2">Sufficiente</option>
+                <option value="w3">Buono</option>
+                <option value="w4">Discreto</option>
+                <option value="w5">Ottimo</option>
+              </select> <br>
+              <small id="know_word_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="know_excel"> Excel </label>
+              <select id="know_excel" name="know_excel">
+                <option value="ex1">Nulla</option>
+                <option value="ex2">Sufficiente</option>
+                <option value="ex3">Buono</option>
+                <option value="ex4">Discreto</option>
+                <option value="ex5">Ottimo</option>
+              </select> <br>
+              <small id="know_excel_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="know_java"> Java </label>
+              <select id="know_java" name="know_java">
+                <option value="j1">Nulla</option>
+                <option value="j2">Sufficiente</option>
+                <option value="j3">Buono</option>
+                <option value="j4">Discreto</option>
+                <option value="j5">Ottimo</option>
+              </select> <br>
+              <small id="know_java_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="know_js"> Java Script</label>
+              <select id="know_js" name="know_js">
+                <option value="js1">Nulla</option>
+                <option value="js2">Sufficiente</option>
+                <option value="js3">Buono</option>
+                <option value="js4">Discreto</option>
+                <option value="js5">Ottimo</option>
+              </select> <br>
+              <small id="know_js_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="know_sql"> SQL </label>
+              <select id="know_sql" name="know_sql">
+                <option value="sql1">Nulla</option>
+                <option value="sql2">Sufficiente</option>
+                <option value="sql3">Buono</option>
+                <option value="sql4">Discreto</option>
+                <option value="sql5">Ottimo</option>
+              </select> <br>
+              <small id="know_sql_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="know_html"> HTML </label>
+              <select id="know_html" name="know_html">
+                <option value="html1">Nulla</option>
+                <option value="html2">Sufficiente</option>
+                <option value="html3">Buono</option>
+                <option value="html4">Discreto</option>
+                <option value="html5">Ottimo</option>
+              </select> <br>
+              <small id="know_html_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="know_css"> CSS </label>
+              <select id="know_css" name="know_css">
+                <option value="css1">Nulla</option>
+                <option value="css2">Sufficiente</option>
+                <option value="css3">Buono</option>
+                <option value="css4">Discreto</option>
+                <option value="css5">Ottimo</option>
+              </select> <br>
+              <small id="know_css_error">Error message</small>
+            </div>
+            <div class="form-control">
+              <label for="know_linux"> Linux </label>
+              <select id="know_linux" name="know_linux">
+                <option value="linux1">Nulla</option>
+                <option value="linux2">Sufficiente</option>
+                <option value="linux3">Buono</option>
+                <option value="linux4">Discreto</option>
+                <option value="linux5">Ottimo</option>
+              </select> <br>
+              <small id="know_linux_error">Error message</small>
+            </div>
+          </fieldset>
+          <div class="form-control-button">
+            <button type="submit" id="modifica" name="modifica" style="margin-top:1em;margin-bottom:1em;float:right;"> Modifica </button>
+          </div>
+          </form>
+        </div>
+      </div>
 
     <script>
       function toggleMenu() {
