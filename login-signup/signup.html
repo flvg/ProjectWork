@@ -11,6 +11,11 @@
     <div class="container">
     <div class="header"><h2> Sign Up </h2></div>
             <form method="post" id="form" class="form" onsubmit="return validated()">
+              <div class="form-control">
+                <label for="name"> Codice fiscale </label>
+                <input type="text" id="codfis" name="codfis" required> <br>
+                <small id="name_error">Error message</small>
+              </div>
               <div class="name_surname">
               <div class="form-control">
                 <label for="name"> Nome </label>
